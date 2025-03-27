@@ -1,0 +1,6 @@
+{
+    "ipynb.experimental.serialization": false,
+    "ipynb.pasteImagesAsAttachments.enabled": true,
+    "typescript.workspaceSymbols.excludeLibrarySymbols": false,
+    "scm.compactFolders": false
+}
