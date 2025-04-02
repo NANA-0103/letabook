@@ -1,0 +1,15 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5f5; /* ღია იისფერი ფონი */
+    text-align: center;
+}
+
+h1 {
+    color: #6a0dad; /* მუქი იისფერი */
+    font-size: 36px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
