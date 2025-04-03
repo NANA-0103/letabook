@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Leta Publishing</title>
+    <link rel="stylesheet" href="book.css"> <!-- ფაილი book.css -->
+</head>
+<body>
+    <header>
+        <h1>Our Books</h1>
+    </header>
+
+    <!-- წიგნის სექცია -->
+    <div class="cherry-blossom-book">
+        <img src="C:\Users\Dell INSPIRON15\OneDrive - Holy Apostle St Andrew the First-Called Georgian University of Georgian Patriarchate\Desktop\მეოცნებე/მარტოობის სიცილი წინა ყდა პნგ" alt="Cherry Blossom Book">
+        <h2>მარტოობის სიცილი</h2>
+        <p>Author: ნანა აფაქიძე</p>
+        <p>Price: $15</p>
+        <button onclick="orderBook('მარტოობის სიცილი')">Order Physical Copy</button>
+        <button onclick="buyEbook('მარტოობის სიცილი')">Buy eBook</button>
+    </div>
+
+    <div class="cherry-blossom-book">
+        <img src="images/cherry-blossom-book2.jpg" alt="Another Book">
+        <h2>Dreams of the Cherry Tree</h2>
+        <p>Author: Taro Yamada</p>
+        <p>Price: $18</p>
+        <button onclick="orderBook('Dreams of the Cherry Tree')">Order Physical Copy</button>
+        <button onclick="buyEbook('Dreams of the Cherry Tree')">Buy eBook</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:goldenpisces21@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
