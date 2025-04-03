@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "build": "your_build_command_here",
+      "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
