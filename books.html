@@ -19,13 +19,40 @@
             </ul>
         </nav>
     </header>
-    <div class="book-container">
-        <img src="images/მარტოობის სიცილი _ წიგნი.jpg.jpg" alt="მარტოობის სიცილი" class="book-image">
-        <div class="book-info">
-            <h1 class="book-title">მარტოობის სიცილი</h1>
-            <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
-            <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
-        </div>
+<div class="book-container">
+    <img src="images/მარტოობის სიცილი _ წიგნი.jpg.jpg" alt="მარტოობის სიცილი" class="book-image">
+    <div class="book-info">
+        <h1 class="book-title">მარტოობის სიცილი</h1>
+        <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
+        <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
+    </div>
+</div> <!-- აქ მთავრდება წიგნის კონტეინერი -->
+
+<section id="order">
+  <h2>შეიძინე წიგნი</h2>
+  <form action="https://formsubmit.io/send/tamazi.chaduneli@gmail.com" method="POST">
+  <input name="_redirect" type="hidden" value="https://letabook.com/success.html">
+    <label for="name">სახელი და გვარი:</label>
+    <input type="text" id="name" name="სახელი" required>
+
+    <label for="address">მისამართი:</label>
+    <input type="text" id="address" name="მისამართი" required>
+
+    <label for="email">ელ.ფოსტა:</label>
+    <input type="email" id="email" name="ელფოსტა" required>
+
+    <label for="phone">ტელეფონი:</label>
+    <input type="tel" id="phone" name="ტელეფონი" required>
+
+    <label for="quantity">რაოდენობა:</label>
+    <input type="number" id="quantity" name="რაოდენობა" value="1" min="1" required>
+
+    <label for="message">დამატებითი ინფორმაცია:</label>
+    <textarea id="message" name="შეტყობინება"></textarea>
+
+    <button type="submit">შეკვეთა</button>
+  </form>
+</section>
     </div>
 </body>
 </html>
