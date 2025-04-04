@@ -33,13 +33,19 @@
   <h2>შეიძინე წიგნი</h2>
   <form action="https://formsubmit.io/send/tamazi.chaduneli@gmail.com" method="POST">
     <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
-    <input type="text" name="_formsubmit" style="display:none">
 
     <label for="name">სახელი და გვარი:</label>
     <input type="text" id="name" name="სახელი" required>
 
     <label for="address">მისამართი:</label>
     <input type="text" id="address" name="მისამართი" required>
+
+    <label for="format">ვერსია:</label>
+    <select id="format" name="ვერსია" required>
+      <option value="">აირჩიეთ</option>
+      <option value="ბეჭდური">ბეჭდური</option>
+      <option value="ელექტრონული (PDF)">ელექტრონული (PDF)</option>
+    </select>
 
     <label for="email">ელ.ფოსტა:</label>
     <input type="email" id="email" name="ელფოსტა" required>
