@@ -1,6 +1,6 @@
 body {
     font-family: "Georgia", serif;
-    background: linear-gradient(to bottom, #fce4ec, #e1bee7); /* ღია ვარდისფერი და იასამნისფერი */
+    background: linear-gradient(to bottom, #fce4ec, #e1bee7);
     margin: 0;
     padding: 0;
     color: #4a004d;
@@ -68,4 +68,54 @@ header {
 
 .book-container button:hover {
     background-color: #8e5b78;
+}
+
+/* ახალი დამატება */
+
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #633974;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #512e5f;
+}
+
+.purchase-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
 }
