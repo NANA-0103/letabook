@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>წიგნები</title>
-    <link rel="stylesheet" href="books.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>წიგნები • ლეთა</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="books.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="books.css">
 <body>
-    <header>
-        <h1>გამომცემლობა ლეთა</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">მთავარი</a></li>
-                <li><a href="leta.html">შესახებ</a></li>
-                <li><a href="books.html">წიგნები</a></li>
-            </ul>
-        </nav>
-    </header>
-<div class="book-container">
-  <img src="images/მარტოობის სიცილი_წიგნი.jpg.jpg" alt="მარტოობის სიცილი" class="book-image">
-  <div class="book-info">
-    <h1 class="book-title">მარტოობის სიცილი</h1>
-    <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
-    <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
-    <p class="book-price">ფასი: 7 ლარი</p> <!-- აქ არის დამატებული ფასი -->
-  </div>
-</div>
+  <header>
+    <h1>გამომცემლობა ლ ე თ ა</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="leta.html">შესახებ</a></li>
+        <li><a href="books.html" class="active">წიგნები</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section id="order">
-  <h2>შეიძინე წიგნი</h2>
-  <form action="https://formsubmit.io/send/tamazi.chaduneli@gmail.com" method="POST">
-    <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
+  <main>
+    <section class="book-container">
+      <img src="images/მარტოობის სიცილი_წიგნი.jpg.jpg" alt="მარტოობის სიცილი" class="book-image">
+      <div class="book-info">
+        <h1 class="book-title">მარტოობის სიცილი</h1>
+        <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
+        <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
+        <p class="book-price">ფასი: 7 ლარი</p>
+      </div>
+    </section>
 
-    <label for="name">სახელი და გვარი:</label>
-    <input type="text" id="name" name="სახელი" required>
+    <section id="order" class="section">
+      <h2>შეიძინეთ წიგნი</h2>
+      <form action="https://formsubmit.io/send/tamazi.chaduneli@gmail.com" method="POST">
+        <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
 
-    <label for="address">მისამართი:</label>
-    <input type="text" id="address" name="მისამართი" required>
+        <label for="name">სახელი და გვარი:</label>
+        <input type="text" id="name" name="სახელი" required>
 
-    <label for="format">ვერსია:</label>
-    <select id="format" name="ვერსია" required>
-      <option value="">აირჩიეთ</option>
-      <option value="ბეჭდური">ბეჭდური</option>
-      <option value="ელექტრონული (PDF)">ელექტრონული (PDF)</option>
-    </select>
+        <label for="address">მისამართი:</label>
+        <input type="text" id="address" name="მისამართი" required>
 
-    <label for="email">ელ.ფოსტა:</label>
-    <input type="email" id="email" name="ელფოსტა" required>
+        <label for="format">ვერსია:</label>
+        <select id="format" name="ვერსია" required>
+          <option value="">აირჩიეთ</option>
+          <option value="ბეჭდური">ბეჭდური</option>
+          <option value="ელექტრონული (PDF)">ელექტრონული (PDF)</option>
+        </select>
 
-    <label for="phone">ტელეფონი:</label>
-    <input type="tel" id="phone" name="ტელეფონი" required>
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="ელფოსტა" required>
 
-    <label for="quantity">რაოდენობა:</label>
-    <input type="number" id="quantity" name="რაოდენობა" value="1" min="1" required>
+        <label for="phone">ტელეფონი:</label>
+        <input type="tel" id="phone" name="ტელეფონი" required>
 
-    <label for="message">დამატებითი ინფორმაცია:</label>
-    <textarea id="message" name="შეტყობინება"></textarea>
+        <label for="quantity">რაოდენობა:</label>
+        <input type="number" id="quantity" name="რაოდენობა" value="1" min="1" required>
 
-    <button type="submit">შეკვეთა</button>
-  </form>
-</section>
-    </div>
+        <label for="message">დამატებითი ინფორმაცია:</label>
+        <textarea id="message" name="შეტყობინება" rows="4"></textarea>
+
+        <button type="submit">შეკვეთა</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ლეთა • ყველა უფლება დაცულია</p>
+  </footer>
 </body>
 </html>
