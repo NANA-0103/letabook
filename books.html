@@ -6,6 +6,21 @@
   <title>წიგნები • ლეთა</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="books.css">
+  <style>
+    .download-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #633974;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .download-button:hover {
+      background-color: #512e5f;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,12 +41,25 @@
         <h1 class="book-title">მარტოობის სიცილი</h1>
         <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
         <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
-        <p class="book-price">ფასი: 7 ლარი</p>
+        <p class="book-price">ფასი: 7 ლარი (ელ.ვერსია) | 9 ლარი (ბეჭდვითი)</p>
       </div>
     </section>
 
+    <section>
+      <h3>შეიძინეთ ელექტრონული ვერსია (7 ლარი):</h3>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="შენი-პეიფელ-იმეილი@example.com">
+        <input type="hidden" name="item_name" value="მარტოობის სიცილი - ელექტრონული ვერსია">
+        <input type="hidden" name="amount" value="7.00">
+        <input type="hidden" name="currency_code" value="GEL">
+        <input type="hidden" name="return" value="https://letabook.com/success.html">
+        <button type="submit" class="download-button">გადაიხადე PayPal-ით</button>
+      </form>
+    </section>
+
     <section id="order" class="section">
-      <h2>შეიძინეთ წიგნი</h2>
+      <h2>შეიძინეთ ბეჭდვითი ვერსია</h2>
       <form action="https://formsubmit.io/send/tamazi.chaduneli@gmail.com" method="POST">
         <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
 
