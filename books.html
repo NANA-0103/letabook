@@ -37,12 +37,12 @@
   <main>
     <section class="book-container">
       <img src="https://raw.githubusercontent.com/NANA-0103/letabook/main/მარტოობის%20სიცილი%20წინა%20ყდა%20პნგ.png" alt="მარტოობის სიცილი" class="book-image">
-<div class="book-info">
-  <h1 class="book-title">მარტოობის სიცილი</h1>
-  <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
-  <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
-  <p class="book-price">ფასი: 7 ლარი (ელ.ვერსია) | 9 ლარი (ბეჭდვითი)</p>
-</div>
+      <div class="book-info">
+        <h1 class="book-title">მარტოობის სიცილი</h1>
+        <h2 class="book-author">ავტორი: ნანა აფაქიძე</h2>
+        <p class="book-genre">ჟანრი: ფსიქოლოგიური, ნოველა</p>
+        <p class="book-price">ფასი: 7 ლარი (ელ.ვერსია) | 9 ლარი (ბეჭდვითი)</p>
+      </div>
     </section>
 
     <section>
@@ -56,41 +56,55 @@
         <input type="hidden" name="return" value="https://letabook.com/success.html">
         <button type="submit" class="download-button">გადაიხადე PayPal-ით</button>
       </form>
-      <!-- PDF ჩამოტვირთვის ბმული -->
-      <a href="https://raw.githubusercontent.com/NANA-0103/letabook/main/მარტოობის სიცილი გასწორებული.pdf-1-4.pdf" class="download-button" download>PDF</a>
+      <a href="https://raw.githubusercontent.com/NANA-0103/letabook/main/მარტოობის%20სიცილი%20გასწორებული.pdf-1-4.pdf" class="download-button" download>PDF</a>
     </section>
 
     <section id="order" class="section">
-      <h2>შეიძინეთ ბეჭდვითი ვერსია</h2>
-      <form action="https://formsubmit.io/send/letabook96@gmail.com" method="POST">
-        <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
+      <h2>შეიძინეთ ბეჭდვითი ვერსია (9 ლარი)</h2>
+      <form class="purchase-form">
+        <div class="form-row">
+          <label for="fullname">სახელი და გვარი:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
 
-        <label for="name">სახელი და გვარი:</label>
-        <input type="text" id="name" name="სახელი" required>
+        <div class="form-row">
+          <label for="address">მისამართი:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
 
-        <label for="address">მისამართი:</label>
-        <input type="text" id="address" name="მისამართი" required>
+        <div class="form-row">
+          <label for="city">ქალაქი:</label>
+          <input type="text" id="city" name="city" required>
+        </div>
 
-        <label for="format">ვერსია:</label>
-        <select id="format" name="ვერსია" required>
-          <option value="">აირჩიეთ</option>
-          <option value="ბეჭდური">ბეჭდური</option>
-          <option value="ელექტრონული (PDF)">ელექტრონული (PDF)</option>
-        </select>
+        <div class="form-row">
+          <label for="region">მიხმარითი:</label>
+          <input type="text" id="region" name="region">
+        </div>
 
-        <label for="email">ელ. ფოსტა:</label>
-        <input type="email" id="email" name="ელფოსტა" required>
+        <div class="form-row">
+          <label for="delivery">ელ. ფოსტა:</label>
+          <select id="delivery" name="delivery">
+            <option value="archevani">არჩიეთ</option>
+            <option value="tbilisi">თბილისი</option>
+            <option value="regionebi">რეგიონები</option>
+          </select>
+        </div>
 
-        <label for="phone">ტელეფონი:</label>
-        <input type="tel" id="phone" name="ტელეფონი" required>
+        <div class="form-row">
+          <label for="postal">ტელეფონი:</label>
+          <input type="text" id="postal" name="postal">
+        </div>
 
-        <label for="quantity">რაოდენობა:</label>
-        <input type="number" id="quantity" name="რაოდენობა" value="1" min="1" required>
+        <div class="form-row">
+          <label for="quantity">რაოდენობა:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
 
-        <label for="message">დამატებითი ინფორმაცია:</label>
-        <textarea id="message" name="შეტყობინება" rows="4"></textarea>
-
-        <button type="submit">შეკვეთა</button>
+        <div class="form-row">
+          <label for="notes">დამატებითი:</label>
+          <textarea id="notes" name="notes"></textarea>
+        </div>
       </form>
     </section>
   </main>
