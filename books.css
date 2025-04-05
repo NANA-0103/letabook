@@ -1,92 +1,88 @@
 body {
-  font-family: "BPG Glaho", sans-serif;
+  font-family: 'Noto Sans Georgian', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfcfa;
-  color: #2c2c2c;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
 header {
   background-color: #633974;
-  color: white;
   padding: 20px;
   text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 0;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 nav ul li a.active {
   text-decoration: underline;
 }
 
-main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
 .book-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .book-image {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 200px;
+  margin-right: 30px;
 }
 
 .book-info {
-  flex: 1;
-  min-width: 250px;
+  max-width: 400px;
 }
 
 .book-title {
-  font-size: 28px;
-  color: #4a235a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.book-author {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.book-author, .book-genre, .book-price {
-  margin: 5px 0;
-  font-size: 18px;
+.book-price {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .section {
-  margin-top: 50px;
-}
-
-.section h2, .section h3 {
-  color: #4a235a;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .download-button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: #633974;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
@@ -95,20 +91,12 @@ main {
 
 .note {
   font-size: 14px;
-  color: #555;
-  margin-top: 10px;
+  color: #777;
 }
 
 footer {
-  text-align: center;
+  background-color: #633974;
+  color: white;
   padding: 20px;
-  background-color: #f2f2f2;
-  color: #777;
-  margin-top: 60px;
-}
-
-iframe {
-  border: none;
-  width: 100%;
-  max-width: 100%;
+  text-align: center;
 }
