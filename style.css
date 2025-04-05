@@ -1,28 +1,20 @@
-/* Body Style */
+/* ზოგადი სტილები */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* ღია ცისფერი ფონი */
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
 }
 
-/* Header Style */
 header {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
+  background-color: #98fb98; /* ღია მწვანე ფონი */
+  padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-}
-
-/* Navigation Bar Style */
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
@@ -32,114 +24,87 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #ff6347; /* პომიდვრის წითელი ფერი */
 }
 
-/* Content Section Style */
-.content {
-  text-align: center;
-  padding: 2rem;
-}
-
-.content h2 {
-  color: #007bff;
-}
-
-/* Button Style */
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Footer Style */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Welcome Section */
 .welcome-section {
-  background-color: #f6f0eb;
-  padding: 40px 20px;
-  color: #3e3e3e;
-  font-family: 'Arial', sans-serif;
+  background-color: #fffacd; /* ღია ყვითელი ფონი */
+  padding: 50px;
+  text-align: center;
 }
 
 .welcome-content {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  background: #fffdfc;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.welcome-section h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-  color: #5e3d43;
+.welcome-content h1 {
+  font-size: 2.5em;
+  color: #333;
 }
 
-.welcome-section .tagline {
+.tagline {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.welcome-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+blockquote {
   font-style: italic;
-  color: #805a5a;
-  margin-bottom: 20px;
-}
-
-.welcome-section h2 {
-  color: #7a4e4e;
-  margin-top: 30px;
-}
-
-.welcome-section blockquote {
-  font-style: italic;
-  background-color: #f9ecec;
-  padding: 15px 20px;
-  border-left: 5px solid #d4a5a5;
   margin: 20px 0;
-  border-radius: 5px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-left: 5px solid #ff6347;
 }
 
 .read-more {
   display: inline-block;
-  margin-top: 15px;
-  background-color: #cdb4b4;
-  color: #fff;
+  margin-top: 20px;
   padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
   text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .read-more:hover {
-  background-color: #a28c8c;
+  background-color: #e5533d;
 }
 
 .why-list {
   list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
+  padding: 0;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .why-list li {
-  margin-bottom: 8px;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #98fb98; /* ღია მწვანე ფონი */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
 }
