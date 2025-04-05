@@ -1,121 +1,114 @@
 body {
-    font-family: "Georgia", serif;
-    background: linear-gradient(to bottom, #fce4ec, #e1bee7);
-    margin: 0;
-    padding: 0;
-    color: #4a004d;
+  font-family: "BPG Glaho", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfcfa;
+  color: #2c2c2c;
 }
 
 header {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f8bbd0;
-    color: #6a1b9a;
+  background-color: #633974;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .book-container {
-    background: white;
-    max-width: 350px;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.book-container:hover {
-    transform: scale(1.03);
+.book-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.book-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    border: 3px solid #f8bbd0;
-    margin-bottom: 15px;
+.book-info {
+  flex: 1;
+  min-width: 250px;
 }
 
-.book-container h2 {
-    font-size: 24px;
-    color: #a64d79;
-    margin: 10px 0;
+.book-title {
+  font-size: 28px;
+  color: #4a235a;
+  margin-bottom: 10px;
 }
 
-.book-container p {
-    font-size: 16px;
-    color: #6a1b9a;
-    margin: 6px 0;
+.book-author, .book-genre, .book-price {
+  margin: 5px 0;
+  font-size: 18px;
 }
 
-.book-container .genre {
-    font-style: italic;
-    color: #8e24aa;
-    margin-bottom: 10px;
+.section {
+  margin-top: 50px;
 }
 
-.book-container button {
-    background-color: #c08497;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px 5px 0 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+.section h2, .section h3 {
+  color: #4a235a;
 }
-
-.book-container button:hover {
-    background-color: #8e5b78;
-}
-
-/* ახალი დამატება */
 
 .download-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #633974;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #633974;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
-    background-color: #512e5f;
+  background-color: #512e5f;
 }
 
-.purchase-form {
-    max-width: 500px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.note {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
 }
 
-.form-row {
-    margin-bottom: 15px;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #777;
+  margin-top: 60px;
 }
 
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #6a1b9a;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-textarea {
-    resize: vertical;
+iframe {
+  border: none;
+  width: 100%;
+  max-width: 100%;
 }
