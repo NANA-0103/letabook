@@ -61,5 +61,16 @@
   <footer>
     <p>&copy; 2025 ლეთა • ყველა უფლება დაცულია</p>
   </footer>
+  <script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // ფორმის გაშვების შეჩერება (რომ არ გადავიდეს ახალ გვერდზე)
+    
+    // შეგიძია აქ ნებისმიერი ვალიდაცია ან გადამისამართება
+    alert('თქვენი შეტყობინება წარმატებით გაიგზავნა!');
+    
+    // თუ ყველაფერი სწორია, ფორმა გაიგზავნება
+    this.submit(); // ფორმის საბოლოო გაგზავნა
+  });
+ </script>
 </body>
 </html>
