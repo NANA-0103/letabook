@@ -43,8 +43,7 @@
             alert('გადახდა წარმატებით შესრულდა, მადლობა, ' + details.payer.name.given_name + '!');
           });
         },
-        // Option to allow guest checkout (without PayPal account)
-        fundingSource: paypal.FUNDING.CREDIT,
+        fundingSource: paypal.FUNDING.CREDIT, // ეს უზრუნველყოფს, რომ მომხმარებელი შეძლებს ბარათით გადახდას
         style: {
           layout: 'vertical',
           shape: 'rect',
@@ -52,6 +51,7 @@
         }
       }).render('#paypal-button-container');
     </script>
+
   </div>
 </body>
 </html>
