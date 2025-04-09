@@ -42,10 +42,13 @@
           return actions.order.capture().then(function(details) {
             alert('გადახდა წარმატებით შესრულდა, მადლობა, ' + details.payer.name.given_name + '!');
           });
+        },
+        // "allow_guest_checkout": true ensures guest checkout is enabled (no need to sign up)
+        options: {
+          allow_guest_checkout: true
         }
       }).render('#paypal-button-container');
     </script>
-
   </div>
 </body>
 </html>
