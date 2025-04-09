@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>გილოცავთ - წარმატება</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.paypal.com/sdk/js?client-id=Ab-AfksDo5pSEeJTgeNBVWBk6VafXNUcqpHyvLizQG-DaWEjoVM-l60VXYtL0Enu7v-fwO49IZE0rWqa&currency=USD&components=buttons"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=Ab-AfksDo5pSEeJTgeNBVWBk6VafXNUcqpHyvLizQG-DaWEjoVM-l60VXYtL0Enu7v-fwO49IZE0rWqa&components=buttons&currency=USD"></script>
 </head>
 <body>
   <header>
@@ -43,13 +43,13 @@
             alert('გადახდა წარმატებით შესრულდა, მადლობა, ' + details.payer.name.given_name + '!');
           });
         },
-        // Guest checkout - no PayPal account required
+        // Option to allow guest checkout (without PayPal account)
+        fundingSource: paypal.FUNDING.CREDIT,
         style: {
           layout: 'vertical',
           shape: 'rect',
           color: 'blue'
-        },
-        fundingSource: paypal.FUNDING.CREDIT
+        }
       }).render('#paypal-button-container');
     </script>
   </div>
