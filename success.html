@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>გილოცავთ - წარმატება</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=AVCDxZuMGYorDlut-H3gy3jL4Z-VMEDwPsJsN5i_bFi7XUpr8iMDPcUQJZzqp8b2wGWQSH_U_-ShnuJA&currency=USD"></script>
 </head>
 <body>
   <header>
@@ -20,6 +21,31 @@
         ჩატვირთეთ PDF
       </a>
     </p>
+
+    <hr>
+
+    <h2>გადაიხადეთ PayPal-ით ან ბარათით (~2.50 USD):</h2>
+    <div id="paypal-button-container"></div>
+
+    <script>
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '2.50'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('გადახდა წარმატებით შესრულდა, მადლობა, ' + details.payer.name.given_name + '!');
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
+
   </div>
 </body>
 </html>
