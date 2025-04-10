@@ -1,102 +1,66 @@
 /* ზოგადი სტილები */
 body {
-  margin: 0;
-  font-family: 'BPG Glaho', sans-serif;
-  background-color: #f5f0e6;
-  color: #2e1e1e;
-}
-
-header {
-  background-color: #4b3621;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a.active {
-  border-bottom: 2px solid #fff;
-}
-
-.welcome-section {
-  background: url('https://github.com/NANA-0103/letabook/raw/deba3f5e801cbd11d6f03cfcdd15571bd84edb71/old-paper-texture.jpg') no-repeat center center fixed;
+  background-image: linear-gradient(rgba(200, 180, 255, 0.3), rgba(240, 220, 255, 0.5)), 
+    url('https://raw.githubusercontent.com/NANA-0103/letabook/deba3f5e801cbd11d6f03cfcdd15571bd84edb71/old-paper-texture.jpg');
   background-size: cover;
-  padding: 60px 20px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "BPG Glaho", sans-serif;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(150, 100, 200, 0.2);
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #5c4172;
   text-align: center;
 }
 
-.welcome-content {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(255, 248, 220, 0.85);
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.welcome-content h1,
-.welcome-content h2 {
-  color: #3b2412;
-  margin-bottom: 15px;
-}
-
-.welcome-content p,
-.welcome-content li,
-blockquote {
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-blockquote {
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px;
-  border-left: 4px solid #7a5c3c;
-  margin: 20px 0;
-}
-
-.why-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.why-list li {
-  margin: 10px 0;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 15px;
+a {
+  color: #7b3fa5;
   text-decoration: none;
-  background-color: #7a5c3c;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
 
-.read-more:hover {
-  background-color: #5a4028;
+a:hover {
+  text-decoration: underline;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  background-color: #a178bc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8f65a6;
 }
 
 footer {
-  background-color: #4b3621;
-  color: white;
   text-align: center;
-  padding: 20px 10px;
-  font-size: 14px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #5e5e5e;
 }
