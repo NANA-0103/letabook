@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>გილოცავთ - წარმატება</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.paypal.com/sdk/js?client-id=Ab-AfksDo5pSEeJTgeNBVWBk6VafXNUcqpHyvLizQG-DaWEjoVM-l60VXYtL0Enu7v-fwO49IZE0rWqa&components=buttons&currency=USD"></script>
 </head>
 <body>
   <header>
@@ -14,44 +13,13 @@
   <div class="container">
     <p>თქვენი PDF წიგნი ჩატვირთულია ქვემოთ. თუ ბრაუზერი ვერ აჩვენებს, დააჭირეთ "ჩატვირთეთ PDF" ღილაკს.</p>
 
-    <iframe class="pdf-frame" src="https://raw.githubusercontent.com/NANA-0103/letabook/main/მარტოობის%20სიცილი%20გასწორებული.pdf.pdf" width="100%" height="600px"></iframe>
+    <iframe class="pdf-frame" src="https://raw.githubusercontent.com/NANA-0103/letabook/main/martoobis-sicili-fuli.pdf" width="100%" height="600px"></iframe>
 
     <p>
-      <a href="https://raw.githubusercontent.com/NANA-0103/letabook/main/მარტოობის%20სიცილი%20გასწორებული.pdf.pdf" target="_blank" class="download-link">
+      <a href="https://raw.githubusercontent.com/NANA-0103/letabook/main/martoobis-sicili-fuli.pdf" target="_blank" class="download-link">
         ჩატვირთეთ PDF
       </a>
     </p>
-
-    <hr>
-
-    <h2>გადაიხადეთ PayPal-ით ან ბარათით (~2.50 USD):</h2>
-    <div id="paypal-button-container"></div>
-
-    <script>
-      paypal.Buttons({
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{
-              amount: {
-                value: '2.50'
-              }
-            }]
-          });
-        },
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('გადახდა წარმატებით შესრულდა, მადლობა, ' + details.payer.name.given_name + '!');
-          });
-        },
-        fundingSource: paypal.FUNDING.CREDIT, // ეს უზრუნველყოფს, რომ მომხმარებელი შეძლებს ბარათით გადახდას
-        style: {
-          layout: 'vertical',
-          shape: 'rect',
-          color: 'blue'
-        }
-      }).render('#paypal-button-container');
-    </script>
-
   </div>
 </body>
 </html>
