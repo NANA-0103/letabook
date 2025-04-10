@@ -1,133 +1,102 @@
 /* ზოგადი სტილები */
 body {
-  font-family: 'Noto Sans Georgian', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'BPG Glaho', sans-serif;
+  background-color: #f5f0e6;
+  color: #2e1e1e;
 }
 
 header {
-  background-color: #633974;
+  background-color: #4b3621;
+  color: white;
   padding: 20px;
   text-align: center;
-  color: white;
-}
-
-h1 {
-  margin: 0;
-  font-size: 36px;
-  letter-spacing: 2px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-weight: bold;
 }
 
-nav ul li a:hover, .active {
-  text-decoration: underline;
+nav a.active {
+  border-bottom: 2px solid #fff;
 }
 
 .welcome-section {
-  background: url('https://example.com/old-paper-texture.jpg') no-repeat center center fixed;
+  background: url('https://github.com/NANA-0103/letabook/raw/deba3f5e801cbd11d6f03cfcdd15571bd84edb71/old-paper-texture.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
-  padding: 40px 0;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .welcome-content {
   max-width: 800px;
   margin: 0 auto;
+  background-color: rgba(255, 248, 220, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.welcome-content h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.welcome-content h1,
+.welcome-content h2 {
+  color: #3b2412;
+  margin-bottom: 15px;
 }
 
-.tagline {
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 20px;
+.welcome-content p,
+.welcome-content li,
+blockquote {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+blockquote {
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-left: 4px solid #7a5c3c;
+  margin: 20px 0;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.why-list li {
+  margin: 10px 0;
 }
 
 .read-more {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #633974;
-  color: white;
+  margin-top: 15px;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  background-color: #7a5c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .read-more:hover {
-  background-color: #512e5f;
+  background-color: #5a4028;
 }
 
 footer {
-  background-color: #633974;
+  background-color: #4b3621;
   color: white;
-  padding: 20px;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-form label {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-form input, form textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 100%;
-}
-
-form button {
-  padding: 12px;
-  background-color: #633974;
-  color: white;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-form button:hover {
-  background-color: #8e58a9;
-}
-
-form textarea {
-  resize: vertical;
-  min-height: 100px;
+  padding: 20px 10px;
+  font-size: 14px;
 }
