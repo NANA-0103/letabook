@@ -1,108 +1,90 @@
 /* ზოგადი სტილები */
 body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #fce4ec, #e1bee7);
+  font-family: 'Noto Sans Georgian', sans-serif;
   margin: 0;
   padding: 0;
-  color: #4a004d;
+  background: linear-gradient(rgba(99, 57, 116, 0.7), rgba(99, 57, 116, 0.7)), url('https://github.com/NANA-0103/letabook/blob/deba3f5e801cbd11d6f03cfcdd15571bd84edb71/old-paper-texture.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  color: #333;
 }
 
 header {
-  text-align: center;
-  padding: 40px 0;
-  background-color: #f8bbd0;
-  color: #6a1b9a;
-}
-
-.container {
-  max-width: 900px;
-  margin: 40px auto;
+  background-color: rgba(99, 57, 116, 0.8); /* გამჭვირვალე ბექგრაუნდი */
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
-.pdf-frame {
-  width: 100%;
-  height: 600px;
-  border: none;
-  margin-top: 20px;
+h1 {
+  margin: 0;
 }
 
-.download-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #633974;
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
 }
 
-.download-link:hover {
-  background-color: #512e5f;
+nav ul li a.active {
+  text-decoration: underline;
 }
 
-form {
+.welcome-section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-}
-
-form label {
-  margin-top: 10px;
-  font-weight: bold;
-  width: 100%;
-  max-width: 400px;
-  text-align: left;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin-top: 5px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 400px;
-}
-
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #633974;
+  margin-top: 50px;
   color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 4px;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #512e5f;
+.welcome-content {
+  max-width: 800px;
+}
+
+.welcome-content h1 {
+  font-size: 36px;
+}
+
+.welcome-content .tagline {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.welcome-content blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.welcome-content a {
+  color: #633974;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.welcome-content a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #f8bbd0;
-  color: #6a1b9a;
+  background-color: #633974;
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
-  font-size: 0.85em;
-  opacity: 0.7;
+  font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .container {
-    margin: 20px;
-    padding: 10px;
-  }
-
-  .pdf-frame {
-    height: 400px;
-  }
-
-  form input, form textarea {
-    max-width: 100%;
-  }
+footer p {
+  margin: 0;
 }
