@@ -1,3 +1,4 @@
+/* Book CSS */
 body {
   font-family: 'Noto Sans Georgian', sans-serif;
   margin: 0;
@@ -8,20 +9,18 @@ body {
 
 header {
   background-color: #633974;
-  padding: 30px 20px; /* მეტი padding */
+  padding: 20px;
   text-align: center;
   color: white;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.5em; /* წიგნის სახელი უფრო შესამჩნევი */
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
 }
 
 nav ul li {
@@ -43,69 +42,57 @@ nav ul li a.active {
   justify-content: center;
   align-items: center;
   margin: 40px 0;
-  max-width: 1200px; /* გაფართოებული განლაგება */
-  margin: 40px auto; /* ცენტრირებულია */
-  padding: 0 15px;
 }
 
 .book-image {
-  max-width: 250px; /* გაფართოებული გამოსახულება */
+  max-width: 200px;
   margin-right: 30px;
-  border-radius: 10px; /* გადაკრებული კუთხეები */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* ძვირფასი კუთხეები */
 }
 
 .book-info {
-  max-width: 500px; /* უფრო ფართო ტექსტი */
+  max-width: 400px;
 }
 
 .book-title {
-  font-size: 2.5em; /* უფრო დიდი ზომა */
+  font-size: 24px;
   font-weight: bold;
-  color: #633974; /* ფერის ცვლილება */
 }
 
 .book-author {
-  font-size: 1.2em;
+  font-size: 18px;
   margin-bottom: 10px;
-  color: #512e5f; /* ფერის ცვლილება */
 }
 
 .book-price {
-  font-size: 1.5em; /* წიგნის ფასის მეტად გამოსაჩენი */
+  font-size: 16px;
   margin-top: 10px;
-  color: #ff6347; /* პომიდვრის წითელი ფერი */
 }
 
 .section {
   margin: 40px 0;
-  padding: 30px; /* უფრო მეტი padding */
+  padding: 20px;
   background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* გრადუირებული შადური */
-  border-radius: 10px; /* გლუვი კუთხეები */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .download-button {
   display: inline-block;
-  margin-top: 30px;
-  padding: 12px 25px;
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: #633974;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 1.1em; /* დიდი ზომა */
 }
 
 .download-button:hover {
   background-color: #512e5f;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ეფექტი ხანგრძლივი მუქი ფერის */
 }
 
 .note {
   font-size: 14px;
   color: #777;
-  margin-top: 20px;
 }
 
 footer {
@@ -113,15 +100,4 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  margin-top: 50px; /* მეტი სივრცე */
-}
-
-footer p {
-  font-size: 1rem; /* ზომის ცვლილება */
-  margin: 0;
-  opacity: 0.8; /* შეუმჩნეველი ტექსტი */
-}
-
-footer p:hover {
-  opacity: 1; /* ჰოვერინგის დროს უფრო აშკარა */
 }
