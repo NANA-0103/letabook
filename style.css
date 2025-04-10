@@ -1,147 +1,87 @@
-/* ზოგადი სტილები */
+/* ძირითადი სტილები */
 body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #fce4ec, #e1bee7);
+  font-family: 'Noto Sans Georgian', sans-serif;
+  background: linear-gradient(to bottom, #fff5f8, #f3e5f5);
+  color: #4a004d;
   margin: 0;
   padding: 0;
-  color: #4a004d;
 }
 
-/* მთავარი კოვზი */
 header {
+  background-color: #f8bbd0;
+  padding: 40px 20px;
   text-align: center;
-  padding: 50px 0;
-  background: linear-gradient(to right, #f8bbd0, #fce4ec);
-  color: #6a1b9a;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #e1bee7;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #6a1b9a;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ff6347;
-}
-
-/* წიგნების გვერდი */
-.book-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 10%;
-}
-
-.book-info {
-  max-width: 500px;
-}
-
-.book-title {
-  font-size: 2.5rem;
-  color: #4a004d;
-}
-
-.book-author {
-  font-size: 1.2rem;
   color: #6a1b9a;
 }
 
-.book-price {
-  font-size: 1.5rem;
-  color: #ff6347;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-.book-image {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* სექცია */
-.section {
-  padding: 50px 10%;
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  background: linear-gradient(to bottom, #fce4ec, #e1bee7);
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.download-button {
-  background-color: #ff6347;
+.container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 600px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(99, 55, 116, 0.2);
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #633974;
   color: white;
-  padding: 15px 25px;
-  font-size: 1.1rem;
   text-decoration: none;
   border-radius: 8px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.download-button:hover {
-  background-color: #e5533d;
+.download-link:hover {
+  background-color: #512e5f;
 }
 
+/* ციტატა ქვედა ნაწილი */
 footer {
-  background: #f0f8ff;
+  background-color: #f8bbd0;
   text-align: center;
-  padding: 20px 0;
-  position: relative;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-  font-size: 0.9rem;
-  color: #333;
+  padding: 15px;
+  color: #6a1b9a;
+  font-size: 0.9em;
   font-style: italic;
   opacity: 0.7;
-  transition: opacity 0.3s ease;
 }
 
-footer:hover p {
-  opacity: 1;
-}
-
-/* რეზპონსიური დიზაინი */
+/* რეზპონსივი */
 @media (max-width: 768px) {
-  header {
-    padding: 30px 0;
+  .container {
+    margin: 20px;
+    padding: 15px;
   }
 
-  .book-container {
-    flex-direction: column;
-    text-align: center;
+  header h1 {
+    font-size: 2em;
   }
 
-  .book-info {
-    margin-top: 20px;
-  }
-  
-  nav ul {
-    flex-direction: column;
-  }
-
-  .download-button {
-    width: 100%;
-    margin-top: 20px;
+  .pdf-frame {
+    height: 400px;
   }
 }
