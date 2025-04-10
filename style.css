@@ -110,7 +110,6 @@ footer p {
 }
 
 /* ახალი სტილები */
-
 body {
   font-family: "Georgia", serif;
   background: linear-gradient(to bottom, #fce4ec, #e1bee7);
@@ -204,4 +203,57 @@ button:hover {
   .section {
     margin: 10px;
   }
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.success-message {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.loading-animation {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4CAF50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem auto;
+  animation: spin 1s linear infinite;
+}
+
+.pdf-frame {
+  border: none;
+  margin-top: 2rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.download-link:hover {
+  background-color: #45a049;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
