@@ -1,3 +1,4 @@
+/* ზოგადი სტილები */
 body {
   font-family: 'Noto Sans Georgian', sans-serif;
   margin: 0;
@@ -72,7 +73,6 @@ nav ul li a.active {
   padding: 20px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  clear: both; /* ეს დამატება მნიშვნელობა არ გაუკეთებს ელემენტებს გვერდიდან */
 }
 
 .download-button {
@@ -95,13 +95,7 @@ nav ul li a.active {
   color: #777;
 }
 
-footer {
-  background-color: #633974;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
+/* კონტაქტის ფორმა */
 form {
   display: flex;
   flex-direction: column;
@@ -119,11 +113,6 @@ input, textarea {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; /* ველი სრულად შევსება */
-}
-
-input[type="email"], input[type="text"], textarea {
-  margin-bottom: 15px; /* ველი-ების შორის დაშორება */
 }
 
 button {
@@ -141,6 +130,18 @@ button:hover {
   background-color: #512e5f;
 }
 
-footer p {
-  margin: 0;
+/* რეზპონსიური დიზაინი */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .section {
+    margin: 10px;
+  }
 }
