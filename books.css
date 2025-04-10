@@ -25,13 +25,12 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
 }
 
 nav ul li a.active {
@@ -40,34 +39,27 @@ nav ul li a.active {
 
 .book-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 40px auto;
   max-width: 1000px;
-  padding: 0 20px;
-  gap: 30px;
 }
 
 .book-image {
-  flex: 1 1 250px;
-  max-width: 300px;
-}
-
-.book-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  max-width: 250px;
+  margin: 20px;
 }
 
 .book-info {
-  flex: 1 1 400px;
+  max-width: 500px;
+  margin: 20px;
+  text-align: left;
 }
 
 .book-title {
   font-size: 26px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .book-author {
@@ -83,23 +75,20 @@ nav ul li a.active {
 .section {
   margin: 40px auto;
   padding: 20px;
-  max-width: 900px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  max-width: 900px;
 }
 
 .download-button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: #633974;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.3s;
 }
 
 .download-button:hover {
@@ -112,77 +101,11 @@ nav ul li a.active {
   margin-top: 10px;
 }
 
-/* კონტაქტის ფორმა */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input, textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-button {
-  padding: 12px;
-  background-color: #633974;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #512e5f;
-}
-
 footer {
   background-color: #633974;
   color: white;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  font-size: 14px;
-  position: relative;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-  color: white;
-  opacity: 0.7;
-}
-
-/* მობილურისთვის */
-@media (max-width: 768px) {
-  .book-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-  }
-
-  .book-info {
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .section {
-    margin: 20px 10px;
-    padding: 15px;
-  }
+  font-size: 0.85em;
+  opacity: 0.8;
 }
