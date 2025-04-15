@@ -64,3 +64,31 @@ footer {
   font-size: 0.9rem;
   color: #5e5e5e;
 }
+/* Success page სტილები */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.pdf-frame {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(150, 100, 200, 0.3);
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #7b3fa5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.download-link:hover {
+  background-color: #5c2f80;
+}
