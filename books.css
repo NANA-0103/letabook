@@ -1,111 +1,100 @@
-body {
-  font-family: 'Noto Sans Georgian', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
-}
+/* books.css */
 
-header {
-  background-color: #633974;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a.active {
-  text-decoration: underline;
-}
-
+/* წიგნის ბლოკის კონტეინერი */
 .book-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin: 40px auto;
-  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(100, 80, 150, 0.2);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.book-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(100, 80, 150, 0.3);
+}
+
+/* წიგნის სურათი */
 .book-image {
-  max-width: 250px;
-  margin: 20px;
+  max-width: 300px;
+  border-radius: 0.7rem;
+  margin-right: 2rem;
+  box-shadow: 0 5px 15px rgba(100, 80, 150, 0.3);
+  transition: transform 0.3s ease;
 }
 
+.book-image:hover {
+  transform: scale(1.05);
+}
+
+/* ტექსტური ინფორმაცია */
 .book-info {
-  max-width: 500px;
-  margin: 20px;
-  text-align: left;
+  max-width: 400px;
 }
 
 .book-title {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 2rem;
+  color: #5c4172;
+  margin-bottom: 0.5rem;
 }
 
 .book-author {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #7b3fa5;
+  margin-bottom: 0.5rem;
 }
 
-.book-price {
-  font-size: 16px;
-  margin-top: 10px;
+.book-genre, .book-price {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.section {
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-}
-
+/* გადახდის ღილაკი და ბმულები */
 .download-button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #633974;
+  padding: 0.8rem 1.5rem;
+  background-color: #a178bc;
   color: white;
+  border-radius: 0.5rem;
   text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
 }
 
 .download-button:hover {
-  background-color: #512e5f;
+  background-color: #8f65a6;
+  transform: translateY(-2px);
 }
 
 .note {
-  font-size: 14px;
-  color: #777;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #5e5e5e;
+  margin-top: 0.5rem;
 }
 
-footer {
-  background-color: #633974;
-  color: white;
-  padding: 15px;
+.tbc-checkout-placeholder {
+  background-color: rgba(255, 245, 255, 0.9);
+  padding: 1rem;
+  border: 1px dashed #a178bc;
+  border-radius: 0.5rem;
   text-align: center;
-  font-size: 0.85em;
-  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* ფორმის iframe */
+iframe {
+  border-radius: 0.7rem;
+  box-shadow: 0 5px 20px rgba(100, 80, 150, 0.2);
+}
+
+/* სექციების სათაურები */
+.section h3, .section h2 {
+  color: #5c4172;
+  margin-bottom: 1rem;
 }
