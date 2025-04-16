@@ -1,4 +1,16 @@
-/* books.css */
+/* საიტის ლოგო */
+#site-logo {
+  width: 70px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(100, 80, 150, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+#site-logo:hover {
+  transform: scale(1.05);
+}
 
 /* წიგნის ბლოკის კონტეინერი */
 .book-container {
