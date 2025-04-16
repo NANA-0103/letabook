@@ -21,7 +21,8 @@ header {
 }
 
 #site-logo {
-  height: 60px;
+  width: 150px;
+  height: auto;
   border-radius: 8px;
 }
 
