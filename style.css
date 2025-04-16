@@ -1,6 +1,6 @@
 /* ზოგადი სტილები */
 body {
-  background-image: linear-gradient(rgba(200, 180, 255, 0.3), rgba(240, 220, 255, 0.5)), 
+  background-image: linear-gradient(rgba(200, 180, 255, 0.3), rgba(240, 220, 255, 0.5)),
     url('https://raw.githubusercontent.com/NANA-0103/letabook/deba3f5e801cbd11d6f03cfcdd15571bd84edb71/old-paper-texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,6 +11,21 @@ body {
   line-height: 1.6;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+#site-logo {
+  height: 60px;
+  border-radius: 8px;
+}
+
+/* welcome სექცია */
 .section {
   padding: 3rem 2rem;
   margin: 0 auto;
@@ -64,6 +79,7 @@ footer {
   font-size: 0.9rem;
   color: #5e5e5e;
 }
+
 /* Success page სტილები */
 .container {
   max-width: 800px;
