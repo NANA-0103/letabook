@@ -8,16 +8,15 @@
 </head>
 <body>
   <header>
-  <a href="index.html">
-  </a>
-  <h1>გამომცემლობა ლეთა</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">მთავარი</a></li>
-      <li><a href="leta.html" class="active">შესახებ</a></li>
-      <li><a href="books.html">წიგნები</a></li>
-    </ul>
-  </nav>
+    <a href="index.html"></a>
+    <h1>გამომცემლობა ლეთა</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="leta.html" class="active">შესახებ</a></li>
+        <li><a href="books.html">წიგნები</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section id="intro" class="section">
@@ -44,8 +43,10 @@
 
   <section id="contact" class="section">
     <h2>დაგვიკავშირდით</h2>
-    <form action="https://formsubmit.io/send/letabook96@gmail.com" method="POST">
+    <form action="https://formsubmit.co/leta.book96@gmail.com" method="POST">
+      <!-- გადამისამართება წარმატების გვერდზე -->
       <input type="hidden" name="_redirect" value="https://letabook.com/success.html">
+      <input type="hidden" name="_captcha" value="false">
 
       <label for="name">სახელი:</label>
       <input type="text" id="name" name="name" required>
@@ -63,16 +64,5 @@
   <footer>
     <p>&copy; 2025 ლეთა • ყველა უფლება დაცულია</p>
   </footer>
-  <script>
-  document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // ფორმის გაშვების შეჩერება (რომ არ გადავიდეს ახალ გვერდზე)
-    
-    // შეგიძია აქ ნებისმიერი ვალიდაცია ან გადამისამართება
-    alert('თქვენი შეტყობინება წარმატებით გაიგზავნა!');
-    
-    // თუ ყველაფერი სწორია, ფორმა გაიგზავნება
-    this.submit(); // ფორმის საბოლოო გაგზავნა
-  });
- </script>
 </body>
 </html>
